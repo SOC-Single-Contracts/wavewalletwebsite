@@ -1,0 +1,8 @@
+.scrollVideoPlayer::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  .scrollVideoPlayer {
+    overflow: hidden; /* Hide scrollbar for Firefox */
+  }
+  
