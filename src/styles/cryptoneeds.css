@@ -1,37 +1,55 @@
-
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
 .cryptoBottom .slick-slide {
   /* Make sure there's enough room for the increased height of the highlighted card */
-  margin: 20px 0; /* This might need adjustment */
-  transition: margin 0.5s ease; /* Smooth transition for the margin */
+  margin: 20px 0;
+  /* This might need adjustment */
+  transition: margin 0.5s ease;
+  /* Smooth transition for the margin */
 }
 
 /* Ensure the slider container accommodates the highlighted card */
 .cryptoBottom .slick-list {
-  transition: height 0.5s ease; /* Smooth transition for the height */
+  transition: height 0.5s ease;
+  /* Smooth transition for the height */
   /* Adjust this height based on your design */
-  height: auto; /* This could be 'auto' or a specific value if needed */
+  height: auto;
+  /* This could be 'auto' or a specific value if needed */
 }
 
 .cryptoBottom .slick-slider {
-  width: 60%; /* Adjust width as needed */
+  width: 60%;
+  /* Adjust width as needed */
 }
 
+.cardImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImg img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .highlightCard {
   transition: all 0.5s ease;
   transform: scale(1.1);
   /* Increase the height of the card */
-  height: 150%; /* Adjust the value based on your design */
-  z-index: 2; /* Ensure it's above other cards */
+  height: 150%;
+  /* Adjust the value based on your design */
+  z-index: 2;
+  /* Ensure it's above other cards */
 }
 
 .highlightCard img {
   transition: all 0.5s ease;
-  object-fit: cover; /* This will ensure the image covers the increased area */
-  height: 100%; /* Make the image fully fill the increased card height */
+  object-fit: cover;
+  /* This will ensure the image covers the increased area */
+  height: 100%;
+  /* Make the image fully fill the increased card height */
 }
 
 
@@ -54,31 +72,36 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  /* gap: 5px; */
   align-items: center;
-  justify-content: center; /* Center horizontally */
+  justify-content: center;
+  /* Center horizontally */
   margin-top: 50px;
+  width: 100%;
 }
 
 
 .cryptoBottom img {
-  max-width: 90%; /* Adjust the maximum width of the images */
+  max-width: 90%;
+  /* Adjust the maximum width of the images */
   height: auto;
 }
+
 .blurOverlay {
-position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    background: linear-gradient(transparent, #04122d);
-    filter: blur(20px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(transparent, #04122d);
+  filter: blur(20px);
 }
 
 .lastDiv {
   margin-top: 68px;
 }
 
-@media screen and (min-width: 610px) and  (max-width: 768px) {
+@media screen and (min-width: 610px) and (max-width: 768px) {
   .cryptoMain {
     margin-top: 50px;
   }
@@ -86,9 +109,12 @@ position: absolute;
   .cryptoBottom .slick-slider,
   .cryptoBottom .slick-list,
   .cryptoBottom .slick-slide {
-    width: 100%; /* Use 100% of the container's width */
-    margin: 0 auto; /* Center align if necessary */
+    /* width: 100%; */
+    /* Use 100% of the container's width */
+    margin: 0 auto;
+    /* Center align if necessary */
   }
+
   .cryptoTopHeading {
     font-size: 32px;
   }
@@ -100,24 +126,29 @@ position: absolute;
 
   .cryptoBottom .cryptoCard {
     width: 40%;
-    margin: 10px; 
+    margin: 10px;
   }
 
   .cryptoBottom .slick-list {
     width: 590px;
     margin-left: 51px;
   }
+
+
 }
 
 
 
 
 @media screen and (min-width: 450px) and (max-width:610px) {
+
   .cryptoBottom .slick-slider,
   .cryptoBottom .slick-list,
   .cryptoBottom .slick-slide {
-    width: 100%; /* Use 100% of the container's width */
-    margin-left: 15px; /* Center align if necessary */
+    width: 100%;
+    /* Use 100% of the container's width */
+    margin-left: 15px;
+    /* Center align if necessary */
   }
 
   .cryptoBottom .slick-list {
@@ -132,11 +163,20 @@ position: absolute;
     margin-top: 50px;
   }
 
+  .cryptoBottom img {
+    max-width: 100%;
+    padding-right: 30px;
+    /* Adjust the maximum width of the images */
+    height: auto;
+  }
+
   .cryptoBottom .slick-slider,
   .cryptoBottom .slick-list,
   .cryptoBottom .slick-slide {
-    width: 100%; /* Use 100% of the container's width */
-    margin: 0 auto; /* Center align if necessary */
+    width: 100%;
+    /* Use 100% of the container's width */
+    margin: 0 auto;
+    /* Center align if necessary */
   }
 
   .cryptoTopHeading {
@@ -145,17 +185,19 @@ position: absolute;
   }
 
   .cryptoBottom {
-    gap: 10px;
+    padding-left: 6px;
+    /* gap: 10px; */
     justify-content: center;
   }
 
   .cryptoBottom .cryptoCard {
     width: 50%;
-    margin: 10px; 
+    margin: 10px;
   }
 
   .cryptoBottom .slick-slider {
-    width: 70%; /* Adjust width as needed */
+    width: 70%;
+    /* Adjust width as needed */
   }
 
   .cryptoBottom .slick-track {
@@ -172,7 +214,7 @@ position: absolute;
   .cryptoBottom .slick-list {
     width: 343px;
     margin-left: -13px;
-}
+  }
 
 
 
@@ -181,15 +223,16 @@ position: absolute;
 
 
   .cryptoBottom .slick-slide {
-    position: relative; /* Make the slide container relative for absolute positioning */
-    overflow: hidden; /* Hide overflow content */
-    width: calc(100% / 5); /* Set width for each slide item */
-    flex: 0 0 auto; /* Ensure that each slide item doesn't grow or shrink */
+    position: relative;
+    /* Make the slide container relative for absolute positioning */
+    overflow: hidden;
+    /* Hide overflow content */
+    width: calc(100% / 5);
+    /* Set width for each slide item */
+    flex: 0 0 auto;
+    /* Ensure that each slide item doesn't grow or shrink */
   }
 
-  
-  
+
+
 }
-
-
-

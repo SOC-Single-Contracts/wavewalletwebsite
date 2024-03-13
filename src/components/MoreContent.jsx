@@ -16,11 +16,11 @@ const MoreContent = () => {
 
   return (
     <div className="moreContentMain">
-      <div className="moreContentLeft" data-aos="fade-right">
+      <div className="moreContentLeft" data-aos="fade-bottom">
         <img className="moreContentPic" src={moreContent} alt="more content pic" />
       </div>
 
-      <div className="moreContentRight" data-aos="fade-left">
+      <div className="moreContentRight" data-aos="fade-bottom">
         <p className="moreContentHeading">Some More <br className="" /> Content Goes Here</p>
         <p className="moreContentParagraph">
           Nunc donec sed nunc sit pharetra id nunc elementum.<br className="br-md" />

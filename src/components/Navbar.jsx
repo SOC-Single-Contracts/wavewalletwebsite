@@ -1,25 +1,26 @@
 import React, { useState } from 'react';
 import '../styles/navbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import logo from '../assests/logo.png'
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleMenuToggle = () => {
     setShowMenu(!showMenu);
   };
-  
+
   return (
     <div className='mainNav'>
       <div className="logo">
-        <p className='logoText'>Logo</p>
+        <img src={logo} style={{ width: "200px", height: "80px" }} alt="" />
+        {/* <p className='logoText'>Logo</p> */}
       </div>
-      
-      
+
+
       {/* Show menu icon on small screens */}
       <div className="menuIcon" onClick={handleMenuToggle}>
-  <MenuIcon />
-</div>
+        <MenuIcon />
+      </div>
 
       {/* Display navigation items */}
       <ul className={`navList ${showMenu ? 'showMenu' : ''}`}>

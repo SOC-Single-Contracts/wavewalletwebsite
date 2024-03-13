@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="heroMain">
       <div className="heroTop">
-        <h1 className="topHeading">
+        <h1 className="topHeading" data-aos="fade-up">
           Best <span className="blueText">Web3</span> Wallet Entrance To <br />{" "}
           Crypto World 🚀
         </h1>
@@ -30,9 +30,9 @@ const Hero = () => {
       </div>
 
       <div className="heroVideo">
-        {/* <video className="video" src={heroVideo} autoPlay loop muted /> */}
+        <video className="video" src={heroVideo} autoPlay loop muted />
         {/* <img src={heroPic} alt="picture" /> */}
-        <ScrollVideoPlayer  className="video" videoUrl={video} />
+        {/* <ScrollVideoPlayer className="video" videoUrl={video} /> */}
 
       </div>
     </div>

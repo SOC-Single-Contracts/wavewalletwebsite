@@ -1,22 +1,20 @@
-body{
+body {
   background-color: #04122D;
 }
 
 
-html, body
-  {
-      /* width: 100%;
+html,
+body {
+  /* width: 100%;
       height: 100%; */
-      margin: 0px;
-      padding: 0px;
-      overflow-x: hidden !important;
+  margin: 0px;
+  padding: 0px;
+  /* overflow-x: hidden !important; */
+}
+
+
+@media screen and (max-width: 786px) {
+  .brClass {
+    display: none;
   }
-
-
-  @media screen and (max-width: 786px){
-    .brClass {
-      display: none;
-    }
-  }
-
-
+}

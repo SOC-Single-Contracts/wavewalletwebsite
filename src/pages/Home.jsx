@@ -16,19 +16,19 @@ import Stats from '../components/Stats'
 const Home = () => {
   return (
     <div>
-        <Navbar/>
-        <Hero />
-        <CryptoNeeds />
-        <Stats />
-        <MoreContent />
-        <ThingsTodo />
-        <SomeContent />
-        <Customers />
-        <Products />
-        <HappyClients />
-        <ReduceRisk />
-        <Download />
-        <Footer />
+      <Navbar />
+      <Hero />
+      <CryptoNeeds />
+      <Stats />
+      <MoreContent />
+      <ThingsTodo />
+      <SomeContent />
+      <Customers />
+      <Products />
+      <HappyClients />
+      <ReduceRisk />
+      <Download />
+      <Footer />
     </div>
   )
 }

@@ -19,6 +19,9 @@ const CryptoNeeds = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
+    className: "cardImg",
+    centerPadding: "0",
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
@@ -37,7 +40,7 @@ const CryptoNeeds = () => {
         },
       },
     ],
-    
+
   };
 
   const containerRef = React.useRef(null);
@@ -68,11 +71,11 @@ const CryptoNeeds = () => {
 
       <div className="cryptoBottom" data-aos="fade-up" style={{ width: "99%" }}>
         <Slider {...settings} slideWidth={slideWidth()}>
-        {images.map((image, index) => (
-  <div key={index} className={isCenterSlide(index) ? 'highlightCard' : ''}>
-    <img src={image} alt={`slide ${index + 1}`} />
-  </div>
-))}
+          {images.map((image, index) => (
+            <div key={index} className={isCenterSlide(index) ? 'highlightCard' : 'cardImg'}>
+              <img src={image} alt={`slide ${index + 1}`} />
+            </div>
+          ))}
         </Slider>
         <div className="blurOverlay"></div>
       </div>
